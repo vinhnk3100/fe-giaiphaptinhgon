@@ -5,8 +5,9 @@ import {
     useBreakpointValue,
     Image,
     Box,
+    Flex,
   } from '@chakra-ui/react';
-import { LandingSection } from './LandingSection';
+import { LandingSection } from '../LandingSection';
   
   export default function WithBackgroundImage() {
     return (
@@ -61,6 +62,7 @@ import { LandingSection } from './LandingSection';
                 fontSize='60px'
                 lineHeight='72px'
                 color='#424242'
+                pb='2px'
             >
                 Find & Hire Expert Freelancers
             </Text>
@@ -71,10 +73,14 @@ import { LandingSection } from './LandingSection';
                 fontSize='18px'
                 lineHeight='26px'
                 color='#5B5B5B'
+                py='18px'
             >
                 Work with the best freelance talent from around the world on our secure flexible and cost-effective platform.
             </Text>
-            <Stack direction={'row'} m="0 !important" py="6">
+            <Flex
+                gap='20px'
+                flexDirection='row'
+            >
                 <Button
                     rounded="full"
                     width="148px"
@@ -109,7 +115,7 @@ import { LandingSection } from './LandingSection';
                 >
                     Learn more
                 </Button>
-            </Stack>
+            </Flex>
         </Stack>
     </LandingSection>
     );

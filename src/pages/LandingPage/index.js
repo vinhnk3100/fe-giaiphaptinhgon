@@ -1,5 +1,6 @@
-import DataAnalysis from "../../components/LandingComponents/DataAnalysis"
-import HeroBanner from "../../components/LandingComponents/HeroBanner"
+import DataAnalysis from "../../components/LandingComponents/DataAnalysis/index"
+import HeroBanner from "../../components/LandingComponents/HeroBanner/index"
+import OurFeaturesSection from "../../components/LandingComponents/OurFeaturesSection"
 import { DefaultLayout } from "../../layouts/Default.layout"
 
 export const LandingPage = () => {
@@ -7,6 +8,7 @@ export const LandingPage = () => {
         <DefaultLayout>
             <HeroBanner />
             <DataAnalysis />
+            <OurFeaturesSection />
         </DefaultLayout>
     )
 }
