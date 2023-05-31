@@ -37,5 +37,77 @@ export const MockData = {
             title: 'Request a Callback',
             text: 'Lets talk at a more convenient time for you'
         },
+    ],
+    servicesItemData: [
+        {
+            icon: `/landing-page/icon-star.png`,
+            title: 'Branding Idendity',
+            text: 'Our support team will get assistance from AI-powered.'
+        },
+        {
+            icon: `/landing-page/icon-globe.png`,
+            title: 'Branding consult',
+            text: 'Our support team will get assistance from AI-powered.'
+        },
+        {
+            icon: `/landing-page/icon-image.png`,
+            title: 'Web Development',
+            text: 'Our support team will get assistance from AI-powered.'
+        },
+        {
+            icon: `/landing-page/icon-analyse.png`,
+            title: 'Market anlysis',
+            text: 'Our support team will get assistance from AI-powered.'
+        },
+    ],
+    ourProjectsItemData: [
+        {
+            projectType: 'Quarter',
+            thumbnail: '/landing-page/img-quarter.png',
+            title: 'Quarter',
+            description: 'Company Website'
+        },
+        {
+            projectType: 'UI/UX',
+            thumbnail: '/landing-page/img-quarter.png',
+            title: 'Quarter',
+            description: 'Company Website'
+        },
+        {
+            projectType: 'Quarter',
+            thumbnail: '/landing-page/img-quarter.png',
+            title: 'Quarter',
+            description: 'Company Website'
+        },
+        {
+            projectType: 'Quarter',
+            thumbnail: '/landing-page/img-quarter.png',
+            title: 'Quarter',
+            description: 'Company Website'
+        },
+        {
+            projectType: 'Websites',
+            thumbnail: '/landing-page/img-quarter.png',
+            title: 'Quarter',
+            description: 'Company Website'
+        },
+        {
+            projectType: 'Market',
+            thumbnail: '/landing-page/img-hotel.png',
+            title: 'Hotelmania',
+            description: 'Company Projects'
+        },
+        {
+            projectType: 'Social Media',
+            thumbnail: '/landing-page/img-furniture.png',
+            title: 'Quarter',
+            description: 'Company Website'
+        },
+        {
+            projectType: 'Market',
+            thumbnail: '/landing-page/img-thrive-oil.png',
+            title: 'Quarter',
+            description: 'Company Website'
+        },
     ]
 }
