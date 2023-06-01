@@ -1,5 +1,4 @@
-import { Box, Button, Flex, Image, Link, Menu, MenuButton, MenuItem, MenuList, Select, Text } from "@chakra-ui/react"
-import { MdKeyboardArrowDown } from 'react-icons/md'
+import { Button, Flex, Image, Link, Menu, MenuButton, MenuItem, MenuList, Select, Text } from "@chakra-ui/react"
 
 export const Header = () => {
     return (

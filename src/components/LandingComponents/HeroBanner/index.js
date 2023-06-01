@@ -6,8 +6,11 @@ import {
     Image,
     Box,
     Flex,
+    VStack,
   } from '@chakra-ui/react';
 import { LandingSection } from '../LandingSection';
+import { motion } from 'framer-motion';
+import { FramerAnimationKeyframes } from '../../../constants/framer-keyframe.constant';
   
   export default function WithBackgroundImage() {
     return (
@@ -16,6 +19,16 @@ import { LandingSection } from '../LandingSection';
                 position: 'relative',
             }}
         >
+            <Box
+                position="absolute"
+                top="0"
+                left="0"
+                w="full"
+                h="full"
+                backgroundSize={{ base: 'unset', md: 'cover' }}
+                backgroundPosition="center"
+                bgGradient={'linear(to-t, blackAlpha.600, blackAlpha.50, transparent)'}
+            />
             <Box
                 position="absolute"
                 left='50%'
@@ -117,6 +130,37 @@ import { LandingSection } from '../LandingSection';
                     </Button>
                 </Flex>
             </Stack>
+            <Stack
+                    spacing="6"
+                    position="absolute"
+                    bottom={useBreakpointValue({ base: '34px', md: '48px' })}
+                    left="0"
+                    w="full"
+                    justifyContent="center"
+                >
+                    <VStack spacing="8px" color="white">
+                        <Box
+                            as={motion.div}
+                            animation={`${FramerAnimationKeyframes.bouncingIcon} 2s ease-in-out infinite`}
+                        >
+                            <Image
+                                py="4px"
+                                src="/landing-page/img-mouse-scrolldown.png"
+                                alt=""
+                            />
+                        </Box>
+                        <Text
+                            fontFamily=""
+                            textAlign="center"
+                            alignItems="center"
+                            fontWeight="400"
+                            fontSize="12px"
+                            lineHeight="24px"
+                        >
+                            Scroll down
+                        </Text>
+                    </VStack>
+                </Stack>
         </LandingSection>
     );
   }

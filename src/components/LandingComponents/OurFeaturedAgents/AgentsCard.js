@@ -2,6 +2,8 @@ import React from 'react';
 import { Card, CardHeader, CardBody, Flex, Avatar, Box, Text, Menu, MenuButton, MenuList, MenuItem, Icon } from '@chakra-ui/react';
 import { BsThreeDotsVertical } from 'react-icons/bs'
 import { AiOutlineStar } from 'react-icons/ai'
+import { motion } from 'framer-motion';
+import { FramerAnimationKeyframes } from "../../../constants/framer-keyframe.constant";
 
 export const AgentsCard = ({ avatar, name, place, phoneNumber, email, totalCard, agentsCardProps }) => {
     console.log(totalCard)
@@ -37,13 +39,20 @@ export const AgentsCard = ({ avatar, name, place, phoneNumber, email, totalCard,
                         alignItems='center'
                         justifyContent='space-between'
                     >
-                        <Icon
-                            fontSize='24px'
-                            bg='#FFF'
-                            _hover={{
-                                background: '#FFF',
-                            }}
-                        ><AiOutlineStar /></Icon>
+                        <Box
+                            as={motion.div}
+                            animation={`${FramerAnimationKeyframes.spiningIcon} 2s infinite`}
+                        >
+                            <Icon
+                                fontSize='24px'
+                                bg='#FFF'
+                                _hover={{
+                                    background: '#FFF',
+                                }}
+                            >
+                                <AiOutlineStar />
+                            </Icon>
+                        </Box>
                         <Menu>
                             <MenuButton 
                                 p='16px'
