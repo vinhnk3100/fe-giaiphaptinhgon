@@ -36,6 +36,8 @@ export const OurProjects = () => {
                         fontSize='60px'
                         lineHeight='61.8px'
                         color='#2E2E2E'
+                        data-aos-duration='600'
+                        data-aos='fade-down'
                     >
                         Our Projects
                     </Text>
@@ -47,6 +49,8 @@ export const OurProjects = () => {
                         fontSize='20px'
                         lineHeight='28px'
                         color='#5F5F5F'
+                        data-aos-duration='600'
+                        data-aos='fade-down'
                     >
                         We have been providing great flooring solutions service.
                     </Text>
@@ -76,7 +80,10 @@ export const OurProjects = () => {
                             gap='25px'
                         >
                             {projectTypes.map((item, index) => (
-                                <Tab 
+                                <Tab
+                                    data-aos-duration={(index+1)*400}
+                                    data-aos='fade-down'
+                                    key={index}
                                     w='full' 
                                     bg='#F1F1F1'
                                     color="#ACACAC"

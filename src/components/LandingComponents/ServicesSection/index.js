@@ -36,6 +36,8 @@ export const ServicesSection = () => {
                         fontSize='60px'
                         lineHeight='61.8px'
                         color='#2E2E2E'
+                        data-aos-duration='600'
+                        data-aos='fade-down'
                     >
                         Services
                     </Text>
@@ -46,6 +48,8 @@ export const ServicesSection = () => {
                         fontSize='20px'
                         lineHeight='28px'
                         color='#5F5F5F'
+                        data-aos-duration='600'
+                        data-aos='fade-down'
                     >
                         Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests.
                     </Text>
@@ -92,6 +96,8 @@ export const ServicesSection = () => {
                                     title={item.title}
                                     text={item.text}
                                     href={item.href}
+                                    totalItem={index+1}
+                                    aosDirection={'fade-right'}
                                 />
                             ))
                         }
@@ -111,6 +117,8 @@ export const ServicesSection = () => {
                                     title={item.title}
                                     text={item.text}
                                     href={item.href}
+                                    totalItem={index+1}
+                                    aosDirection={'fade-left'}
                                 />
                             ))
                         }

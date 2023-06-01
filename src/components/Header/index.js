@@ -1,15 +1,17 @@
-import { Button, Flex, Image, Link, Select, Text } from "@chakra-ui/react"
+import { Box, Button, Flex, Image, Link, Menu, MenuButton, MenuItem, MenuList, Select, Text } from "@chakra-ui/react"
+import { MdKeyboardArrowDown } from 'react-icons/md'
 
 export const Header = () => {
     return (
         <Flex
             w='full'
-            position='absolute'
+            backdropFilter='blur(20px)'
+            position='fixed'
             px='120px'
             zIndex='99'
         >
             <Flex
-                py='41px'
+                py='25px'
                 flex='1'
                 h='100%'
                 alignItems='center'
@@ -29,15 +31,77 @@ export const Header = () => {
                 alignItems='center'
                 justifyContent='center'
             >
-                <Select w='' 
-                cursor='pointer' placeholder='Services' border='0'>
-                    <option value='option1'>Ipsum</option>
-                    <option value='option1'>Ipsum</option>
-                </Select>
-                <Text>
+                <Menu>
+                    <MenuButton
+                        as={Button}
+                        variant={'link'}
+                        cursor={'pointer'}
+                        rightIcon={<Image src='/landing-page/icon-polygon-down.png' />}
+                    >
+                        <Text
+                            fontFamily='Inter'
+                            fontWeight='400'
+                            fontSize='15px'
+                            lineHeight='18.15px'
+                            color='#6C768D'
+                        >
+                            Services
+                        </Text>
+                    </MenuButton>
+                    <MenuList>
+                        <MenuItem
+                            as={Flex}
+                        >
+                            <Link
+                                fontFamily='Inter'
+                                fontWeight='400'
+                                fontSize='15px'
+                                lineHeight='18.15px'
+                                color='#6C768D'
+                            >
+                                Link 1
+                            </Link>
+                        </MenuItem>
+                        <MenuItem>
+                            <Link
+                                fontFamily='Inter'
+                                fontWeight='400'
+                                fontSize='15px'
+                                lineHeight='18.15px'
+                                color='#6C768D'
+                            >
+                                Link 1
+                            </Link>
+                        </MenuItem>
+                        <MenuItem>
+                            <Link
+                                fontFamily='Inter'
+                                fontWeight='400'
+                                fontSize='15px'
+                                lineHeight='18.15px'
+                                color='#6C768D'
+                            >
+                                Link 1
+                            </Link>
+                        </MenuItem>
+                    </MenuList>
+                </Menu>
+                <Text
+                    fontFamily='Inter'
+                    fontWeight='400'
+                    fontSize='15px'
+                    lineHeight='18.15px'
+                    color='#6C768D'
+                >
                     <Link>About Us</Link>
                 </Text>
-                <Text>
+                <Text
+                    fontFamily='Inter'
+                    fontWeight='400'
+                    fontSize='15px'
+                    lineHeight='18.15px'
+                    color='#6C768D'
+                >
                     <Link>Blog</Link>
                 </Text>
             </Flex>
@@ -49,9 +113,7 @@ export const Header = () => {
                 
             >
                 <Select maxW='86px' borderRadius='22px' placeholder='EN'>
-                    <option value='option1'>Option 1</option>
-                    <option value='option2'>Option 2</option>
-                    <option value='option3'>Option 3</option>
+                    <option value='VN'>VN</option>
                 </Select>
                 <Button
                     bg={'blue.400'}

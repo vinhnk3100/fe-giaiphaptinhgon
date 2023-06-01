@@ -7,13 +7,14 @@ import { MockData } from '../../../utils/mock-data';
 
 function StatsCard(props) {
     const { title, stat } = props;
+
     return (
       <Flex
         w='221px'
         gap='15px'
         flexDirection='column'
       >
-        <Text
+        <Box
             position='relative'
             fontFamily='Inter'
             fontWeight='600'
@@ -21,8 +22,9 @@ function StatsCard(props) {
             lineHeight='77px'
             color='#FFF'
         >
-          <CountUp 
-            duration={6}
+          <CountUp
+            delay={2}
+            duration={4}
             end={title}
             suffix="%"
           />
@@ -31,8 +33,8 @@ function StatsCard(props) {
             borderBottom='5px solid #FFF'
             left='0'
             right='50%'
-          ></Box>
-        </Text>
+          />
+        </Box>
         <Text
             fontFamily='Inter'
             fontWeight='400'
@@ -67,6 +69,7 @@ export default function DataAnalysis() {
                             icon={item.icon}
                             title={item.title}
                             text={item.text}
+                            totalItem={index+1}
                         />
                     ))}
                 </Flex>
@@ -86,6 +89,8 @@ export default function DataAnalysis() {
                         fontSize='60px'
                         lineHeight='60px'
                         color='#FFF'
+                        data-aos-duration='600'
+                        data-aos='fade-down'
                     >
                         Journey of our Success
                     </Text>
@@ -95,6 +100,8 @@ export default function DataAnalysis() {
                         gap='110'
                         justifyContent='center'
                         alignItems='center'
+                        data-aos-duration='600'
+                        data-aos='fade-down'
                     >
                         <StatsCard title={85} stat={'manage communication more efficiently'} />
                         <StatsCard title={95} stat={'improve communication with customers and clients'} />

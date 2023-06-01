@@ -1,12 +1,15 @@
 import { Flex, Image, Text } from "@chakra-ui/react";
 
-export const FeatureItem = ({ title, text, icon }) => {
+export const FeatureItem = ({ title, text, icon, totalItem }) => {
     return (
       <Flex
           w='full'
           flexDirection='column'
           alignItems='center'
           justifyContent='center'
+          data-aos-offset={totalItem * 100}
+          data-aos-duration={totalItem * 400}
+          data-aos='fade-down'
       >
           <Flex
               w='full'

@@ -119,19 +119,24 @@ export const ProjectsSlideshow = ({ projectType }) => {
                                     key={index}
                                 >
                                     <Link
-                                        display="flex"
-                                        m="0 auto"
                                         href="#"
-                                        _hover={{
-                                            textDecoration: 'none',
-                                        }}
                                     >
-                                        <Card
-                                            projectType={item.projectType}
-                                            thumbnail={item.thumbnail}
-                                            title={item.title}
-                                            description={item.description}
-                                        />
+                                        <Box
+                                            role='group'
+                                            display="flex"
+                                            m="0 auto"
+                                            _hover={{
+                                                textDecoration: 'none',
+                                                boxShadow: '0 30px 30px rgba(0, 86, 214, 0.2)'
+                                            }}
+                                        >
+                                            <Card
+                                                projectType={item.projectType}
+                                                thumbnail={item.thumbnail}
+                                                title={item.title}
+                                                description={item.description}
+                                            />
+                                        </Box>
                                     </Link>
                                 </SwiperSlide>
                             )
@@ -141,19 +146,24 @@ export const ProjectsSlideshow = ({ projectType }) => {
                                     key={index}
                                 >
                                     <Link
-                                        display="flex"
-                                        m="0 auto"
                                         href="#"
-                                        _hover={{
-                                            textDecoration: 'none',
-                                        }}
                                     >
-                                        <Card
-                                            projectType={item.projectType}
-                                            thumbnail={item.thumbnail}
-                                            title={item.title}
-                                            description={item.description}
-                                        />
+                                        <Box
+                                            role='group'
+                                            display="flex"
+                                            m="0 auto"
+                                            _hover={{
+                                                textDecoration: 'none',
+                                                boxShadow: '0 30px 30px rgba(0, 86, 214, 0.2)'
+                                            }}
+                                        >
+                                            <Card
+                                                projectType={item.projectType}
+                                                thumbnail={item.thumbnail}
+                                                title={item.title}
+                                                description={item.description}
+                                            />
+                                        </Box>
                                     </Link>
                                 </SwiperSlide>
                             )

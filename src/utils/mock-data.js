@@ -109,5 +109,31 @@ export const MockData = {
             title: 'Quarter',
             description: 'Company Website'
         },
+    ],
+    ourFeaturedAgentsData: [
+        {
+            avatar: 'https://bit.ly/sage-adebayo',
+            name: 'Alison Kiara',
+            place: 'Michigan, TX',
+            phoneNumber: '989-653-2986',
+            email: 'alisonkiara@hommy.com',
+            alignFlex: 'flex-start'
+        },
+        {
+            avatar: 'https://bit.ly/sage-adebayo',
+            name: 'Blison Kiara',
+            place: 'Michigan, TX',
+            phoneNumber: '989-653-2986',
+            email: 'blisonkiara@hommy.com',
+            alignFlex: 'center'
+        },
+        {
+            avatar: 'https://bit.ly/sage-adebayo',
+            name: 'Clison Kiara',
+            place: 'Michigan, TX',
+            phoneNumber: '989-653-2986',
+            email: 'clisonkiara@hommy.com',
+            alignFlex: 'flex-end'
+        },
     ]
 }

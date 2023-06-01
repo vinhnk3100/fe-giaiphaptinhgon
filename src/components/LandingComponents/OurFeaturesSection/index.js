@@ -37,6 +37,8 @@ export default function OurFeaturesSection() {
                         fontSize='60px'
                         lineHeight='61.8px'
                         color='#2E2E2E'
+                        data-aos-duration='600'
+                        data-aos='fade-down'
                     >
                         Our Features
                     </Text>
@@ -47,6 +49,8 @@ export default function OurFeaturesSection() {
                         fontSize='20px'
                         lineHeight='28px'
                         color='#5F5F5F'
+                        data-aos-duration='600'
+                        data-aos='fade-down'
                     >
                         Unleash your creativety with a visual collaboration plattorm that enables effective ideation
                     </Text>
@@ -62,6 +66,7 @@ export default function OurFeaturesSection() {
                     {displayFeatureData.map((item, index) => (
                         <OurFeaturesItem
                             key={index}
+                            totalItem={index+1}
                             icon={item.icon}
                             title={item.title}
                             text={item.text}

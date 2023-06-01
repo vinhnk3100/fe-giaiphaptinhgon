@@ -1,6 +1,6 @@
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
 
-export const ServicesItem = ({ title, text, icon }) => {
+export const ServicesItem = ({ title, text, icon, totalItem, aosDirection }) => {
     return (
         <Box
             maxW='360px'
@@ -14,6 +14,9 @@ export const ServicesItem = ({ title, text, icon }) => {
             _hover={{
                 boxShadow: '0 30px 30px rgba(0, 86, 214, 0.2)'
             }}
+            data-aos-offset={totalItem * 100}
+            data-aos-duration={totalItem * 400}
+            data-aos={aosDirection}
         >
             <Flex
                 w='full'

@@ -1,19 +1,26 @@
 import { Flex, Image, Text } from "@chakra-ui/react";
+import { motion } from "framer-motion"
+import { FramerAnimationKeyframes } from "../../../constants/framer-keyframe.constant";
 
-export const OurFeaturesItem = ({ title, text, icon }) => {
+export const OurFeaturesItem = ({ title, text, icon, totalItem }) => {
+    console.log(totalItem)
     return (
       <Flex
           w='full'
           flexDirection='column'
           alignItems='center'
           justifyContent='center'
+          data-aos-duration={totalItem * 400}
+          data-aos='fade-down'
       >
           <Flex
-              w='full'
-              alignItems='center'
-              justifyContent='center'
-              color='#FFF'
-              mb='40px'
+            as={motion.div}
+            w='full'
+            alignItems='center'
+            justifyContent='center'
+            color='#FFF'
+            mb='40px'
+            animation={`${FramerAnimationKeyframes.bouncingIcon} ${1.2 * totalItem}s ease infinite`}
           >
               <Image src={icon} w={84} h={84} />
           </Flex>
